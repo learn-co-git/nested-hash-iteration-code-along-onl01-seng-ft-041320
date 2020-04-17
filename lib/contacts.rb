@@ -18,6 +18,9 @@ def remove_strawberry(contacts)
   contacts.each do |person, details|
     if person == "Freddy Mercury"
       details.each do |ice-cream, flavors|
-        flavors.delete_if
-    
+        flavors.delete_if{|flavor| flavor == "strawberry"}
+      end 
+    end 
+  end 
+    contacts
 end
